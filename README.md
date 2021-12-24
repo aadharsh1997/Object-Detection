@@ -1,17 +1,7 @@
 # R-FCN_Tensorflow (Development Version)
 
 ## Abstract
-This is a tensorflow re-implementation of [R-FCN: Object Detection via Region-based Fully Convolutional Networks](https://arxiv.org/abs/1605.06409).     
-
-This project is completed by [YangXue](https://github.com/yangxue0827) and [YangJirui](https://github.com/yangJirui).
-
-## Train on VOC 2007 trainval and test on VOC 2007 test    
-![1](voc_2007.gif)
-
-## Comparison
-| Models | mAP | sheep | horse | bicycle | bottle | cow | sofa | bus | dog | cat | person | train | diningtable | aeroplane | car | pottedplant | tvmonitor | chair | bird | boat | motorbike |
-|------------|:---:|:--:|:--:|:--:|:---:|:--:|:--:|:--:|:--:|:--:|:--:|:---:|:--:|:--:|:--:|:--:|:---:|:--:|:--:|:--:|:--:|
-|resnet101_v1|72.33|73.32|80.55|81.45|52.44|77.50|74.45|82.45|83.77|85.15|79.82|82.05|63.21|77.12|84.42|38.43|71.72|49.44|72.86|56.56|80.09|
+This is a tensorflow re-implementation of [R-FCN: Object Detection via Region-based Fully Convolutional Networks](https://arxiv.org/abs/1605.06409).
 
 ## Requirements
 1、tensorflow >= 1.2     
@@ -73,15 +63,6 @@ python convert_data_to_tfrecord.py --VOC_dir='/PATH/TO/VOCdevkit/VOCdevkit_train
 cd $PATH_ROOT/tools
 python train.py
 ```
-
-## Tensorboard
-```  
-cd $PATH_ROOT/output/summary
-tensorboard --logdir=.
-``` 
-![2](scalars.png)
-![1](images.png)
-
 ## Reference
 1、https://github.com/endernewton/tf-faster-rcnn   
 2、https://github.com/zengarden/light_head_rcnn   
