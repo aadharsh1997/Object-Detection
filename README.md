@@ -1,4 +1,4 @@
-# R-FCN_Tensorflow (Development Version)
+# R-FCN
 
 ## Abstract
 This is a tensorflow re-implementation of [R-FCN: Object Detection via Region-based Fully Convolutional Networks](https://arxiv.org/abs/1605.06409).
